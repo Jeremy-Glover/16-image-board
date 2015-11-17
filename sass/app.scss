@@ -1,0 +1,72 @@
+@import "bourbon";
+@import "neat";
+@import "normalize";
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+@import "font-awesome";
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.nav-board {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  height: 5rem;
+  background-color: rgb(84, 106, 196);
+}
+
+.fa-plus-circle {
+  font-size: 4rem;
+  align-self: center;
+  color: rgb(34, 37, 59);
+  padding-left: 10rem;
+}
+
+.image-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  margin: auto;
+  align-items: center;
+}
+
+#form-url, #form-caption {
+  width: 900px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+.submit-btns {
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+}
+
+.btn {
+  color: white;
+  border-radius: 6%;
+  font-size: 1.5rem;
+  margin: 0 10px 20px 0;
+}
+
+.cancel {
+  width: 200px;
+  height: 100px;
+}
+
+.add-img {
+  width: 280px;
+  height: 100px;
+  background: rgb(44, 148, 49);
+}
+
+.image-list {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
