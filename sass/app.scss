@@ -14,7 +14,7 @@ html {
 
 .nav-board {
   display: flex;
-  max-width: 1400px;
+  width: 100%;
   margin: auto;
   height: 5rem;
   background-color: rgb(84, 106, 196);
@@ -24,19 +24,24 @@ html {
   font-size: 4rem;
   align-self: center;
   color: rgb(34, 37, 59);
-  padding-left: 10rem;
+  padding-left: 20%;
 }
 
 .image-form {
   display: flex;
   flex-direction: column;
-  max-width: 1040px;
+  width: 100%;
   margin: auto;
   align-items: center;
 }
 
+.fa-picture-o {
+   font-size: 2rem;
+   padding-right: .5rem;
+}
+
 #form-url, #form-caption {
-  width: 900px;
+  width: 50%;
   padding: 1.5rem;
   margin: 1.5rem auto;
 }
@@ -44,7 +49,7 @@ html {
 .submit-btns {
   display: flex;
   justify-content: flex-end;
-  width: 900px;
+  width: 50%;
 }
 
 .btn {
@@ -60,6 +65,7 @@ html {
 }
 
 .add-img {
+
   width: 280px;
   height: 100px;
   background: rgb(44, 148, 49);
@@ -67,6 +73,24 @@ html {
 
 .image-list {
   display: flex;
-  max-width: 900px;
+  flex-direction: column;
+  list-style: none;
+  text-decoration-style: 0;
+  width: 50%;
   margin: auto;
+  padding: 0;
+  background: rgb(167, 174, 180);
+}
+
+.img-item {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.caption {
+  margin: 0 0 3rem 0;
+  background: white;
+  height: 5rem;
+  font-size: 2rem;
 }
