@@ -4,7 +4,6 @@
 $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 
-
 html {
   box-sizing: border-box;
 }
@@ -18,6 +17,7 @@ html {
   margin: auto;
   height: 5rem;
   background-color: rgb(84, 106, 196);
+  cursor: pointer;
 }
 
 .fa-plus-circle {
@@ -30,9 +30,8 @@ html {
 .image-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   margin: auto;
-  align-items: center;
 }
 
 .fa-picture-o {
@@ -41,7 +40,7 @@ html {
 }
 
 #form-url, #form-caption {
-  width: 50%;
+  width: 100%;
   padding: 1.5rem;
   margin: 1.5rem auto;
 }
@@ -49,7 +48,7 @@ html {
 .submit-btns {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 100%;
 }
 
 .btn {
@@ -65,7 +64,6 @@ html {
 }
 
 .add-img {
-
   width: 280px;
   height: 100px;
   background: rgb(44, 148, 49);
@@ -75,7 +73,7 @@ html {
   display: flex;
   flex-direction: column;
   list-style: none;
-  text-decoration-style: 0;
+  text-decoration-style: none;
   width: 50%;
   margin: auto;
   padding: 0;
@@ -85,6 +83,7 @@ html {
 .img-item {
   display: flex;
   flex-direction: column;
+  width: 80%;
   margin: auto;
 }
 
@@ -92,5 +91,6 @@ html {
   margin: 0 0 3rem 0;
   background: white;
   height: 5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
