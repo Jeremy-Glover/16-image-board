@@ -1,3 +1,4 @@
+/* globals $ */
 export default function() {
 
   $(`.nav-board`).on(`click`, function() {
@@ -5,8 +6,13 @@ export default function() {
   });
 
   var showInfo = function(info) {
-    $(`<img></img>`).text(`${info.image}`).appendTo(`.image-list`);
-    $(`<p></p>`).text(`${info.caption}`).appendTo(`.image-list`);
+    var listItem = $(`<li></li>`).addClass('img-item').appendTo(`.image-list`);
+
+    $(`<img>`).addClass('images')
+      .attr('src', info.image)
+      .appendTo(listItem);
+
+    $(`<p></p>`).addClass('captions').text(`${info.caption}`).appendTo(listItem);
   };
 
   $(`.image-form`).on(`submit`, function(ev) {
@@ -27,14 +33,14 @@ export default function() {
       $(`#form-caption`).val(' ');
 
       showInfo(response);
+    });
   });
-});
 
   $(`.cancel`).on(`click`, function() {
-    $(`.image-form`).slideUp;
+    $(`.image-form`).slideUp();
     $(`#form-url`).val(' ');
     $(`#form-caption`).val(' ');
-  })
+  });
 
   $.ajax({
     url: `http://tiny-lr.herokuapp.com/collections/photos-jg`,

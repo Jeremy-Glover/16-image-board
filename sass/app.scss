@@ -30,7 +30,7 @@ html {
 .image-form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -59,7 +59,7 @@ html {
 }
 
 .cancel {
-  width: 200px;
+  width: 280px;
   height: 100px;
 }
 
@@ -74,7 +74,8 @@ html {
   flex-direction: column;
   list-style: none;
   text-decoration-style: none;
-  width: 50%;
+  align-items: center;
+  max-width: 900px;
   margin: auto;
   padding: 0;
   background: rgb(167, 174, 180);
@@ -83,14 +84,12 @@ html {
 .img-item {
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin: auto;
 }
 
 .captions {
   margin: 0 0 3rem 0;
   background: white;
-  height: 5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
 }
