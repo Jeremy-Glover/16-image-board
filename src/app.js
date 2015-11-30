@@ -29,8 +29,8 @@ export default function() {
       data: {image, caption},
     }).then((response) => {
       $(`.image-form`).slideUp();
-      $(`#form-url`).val(' ');
-      $(`#form-caption`).val(' ');
+      $(`#form-url`).val('');
+      $(`#form-caption`).val('');
 
       showInfo(response);
     });
@@ -38,8 +38,8 @@ export default function() {
 
   $(`.cancel`).on(`click`, function() {
     $(`.image-form`).slideUp();
-    $(`#form-url`).val(' ');
-    $(`#form-caption`).val(' ');
+    $(`#form-url`).val('');
+    $(`#form-caption`).val('');
   });
 
   $.ajax({
